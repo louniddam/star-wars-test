@@ -1,3 +1,14 @@
+# Note à la personne qui sera chargée de review et tester ce code
+
+Tout d'abord merci du temps accordé à ma candidature.
+Le poste me motive beaucoup et j'espère que cela débouchera sur quelque chose de concluant.
+Je peux affirmer que ma personnalité s'intégrerait bien dans l'équipe :) !
+Il y aurait quelques arrangements à faire dans le code, j'aurai voulu fix le burger menu et le faire changer de couleur au scroll en version mobile, car il reste blanc.
+J'ai du un peu bricoler également dans la section "History" qui fonctionne en desktop et mobile, et non en tablette..
+
+Merci et à bientôt je l'espère ٩(◕‿◕｡)۶	
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
