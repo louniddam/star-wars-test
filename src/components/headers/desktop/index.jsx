@@ -13,9 +13,6 @@ const useStyles = makeStyles({
 		top: 0,
 		left: 0
 	},
-	itemsContainer: {
-
-	},
 	navItems: {
 		color: "white",
 		paddingTop: "3vh",
@@ -35,7 +32,7 @@ const Header = () => {
 
 	return(
 		<Stack className={classes.mainContainer}>
-			<Stack flexDirection={{md: "row", sm: "column" }} alignItems="center" justifyContent="space-around" className={classes.itemsContainer} gap={1}>
+			<Stack flexDirection={{md: "row", sm: "column" }} alignItems="center" justifyContent="space-around" gap={1}>
 				<Typography className={classes.navItems}>LE COTÉ LUMINEUX</Typography>
 				<Typography className={classes.navItems}>LE COTÉ OBSCURE</Typography>
 				<Typography className={classes.navItems}>L'EMPIRE</Typography>

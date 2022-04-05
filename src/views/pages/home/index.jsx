@@ -1,4 +1,4 @@
-import { Typography, Stack } from "@mui/material"
+import { Stack } from "@mui/material"
 import React from "react"
 import { makeStyles } from '@mui/styles';
 import TopBanner from "../../../assets/star-wars/header.png"
@@ -8,18 +8,7 @@ import BattleFrontSection from "./sections/BattleFrontSection";
 import HistorySection from "./sections/HistorySection";
 
 const useStyles = makeStyles({
-	mainContainer: {
-		// minHeight: "180vh",
-	},
-	sectionsContainer: {
-
-	},
-	topBanner: {
-		// backgroundImage: `url(${TopBanner})`,
-        // backgroundSize: 'cover',
-        // minHeight: 800,
-	},
-	sections: {
+	sections: {
 		width: "100%",
 		display: "flex",
 		justifyContent: "center",
@@ -32,8 +21,8 @@ const Home  = () => {
 	const classes = useStyles();
 
 	return(
-		<Stack className={classes.mainContainer}>
-			<Stack className={classes.sectionsContainer} gap={10} alignItems="center">
+		<Stack>
+			<Stack gap={10} alignItems="center">
 				
 				<Stack width="100%">
 					<img src={TopBanner} alt="star-wars title"/>

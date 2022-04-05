@@ -7,12 +7,7 @@ const useStyles = makeStyles((theme) => ({
 	text: {
 		textAlign: "left"
 	},
-	imageContainer: {
-		// [theme.breakpoints.down("md")]: {
-		// 	visibility: "hidden"
-		//   },
-	}
-  }));
+}));
 
 const BattleFrontSection = () => {
 
