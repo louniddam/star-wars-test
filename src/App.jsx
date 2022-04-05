@@ -6,16 +6,25 @@ import Header from "./components/headers/desktop"
 import { ThemeProvider } from "@mui/styles";
 import { createTheme } from '@mui/material/styles';
 import Footer from './components/footer';
-
-
-const theme = createTheme()
+import useMediaQuery from '@mui/material/useMediaQuery';
+import MobileHeader from "./components/headers/mobile"
 
 function App() {
+	//hooks
+	const theme = createTheme()
+	const matches = useMediaQuery(theme.breakpoints.down('md'))
+
+
   return (
 	<div className="App">
 		<ThemeProvider theme={theme}>
 			<Router>
-				<Header />
+				{
+					!matches ?
+					<Header />
+					:
+					<MobileHeader />
+				}
 				<Routes>
 					<Route exact path="/" element={<Home/>} />
 				</Routes>
