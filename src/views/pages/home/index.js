@@ -1,12 +1,22 @@
-import { Typography } from "@mui/material"
+import { Typography, Stack } from "@mui/material"
 import React from "react"
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles({
+	mainContainer: {
+		// minHeight: "180vh",
+	},
+});
 
 const Home  = () => {
 
+	//Hooks
+	const classes = useStyles();
+
 	return(
-		<Typography>
-			Home Page
-		</Typography>
+		<Stack className={classes.mainContainer}>
+
+		</Stack>
 	)
 }
 
