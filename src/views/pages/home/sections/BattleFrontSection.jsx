@@ -20,8 +20,8 @@ const BattleFrontSection = () => {
 	const classes = useStyles();
 
 	return(
-		<Stack width="100%" flexDirection="row" justifyContent="space-around" alignItems="flex-start">
-			<Stack gap={2} width={{ md: "35%", sm: "100%" }}>
+		<Stack sx={{ width: { md: "100%", sm: "85%", xs: "85%" } }} flexDirection="row" justifyContent="space-around" alignItems="flex-start">
+			<Stack gap={2} width={{ md: "35%", sm: "100%", xs: "100%" }}>
 				<Typography variant="h5" fontWeight={800} className={classes.text}>
 					Star Wars, The force Awakens
 				</Typography>
