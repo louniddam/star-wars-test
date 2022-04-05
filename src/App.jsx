@@ -5,7 +5,8 @@ import Home from "./views/pages/home"
 import Header from "./components/headers/desktop"
 import { ThemeProvider } from "@mui/styles";
 import { createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import Footer from './components/footer';
+
 
 const theme = createTheme()
 
@@ -15,10 +16,10 @@ function App() {
 		<ThemeProvider theme={theme}>
 			<Router>
 				<Header />
-					{/* <div style={{ marginTop: 100 }}></div> */}
 				<Routes>
 					<Route exact path="/" element={<Home/>} />
 				</Routes>
+				<Footer />
 			</Router>
 		</ThemeProvider>
 	</div>

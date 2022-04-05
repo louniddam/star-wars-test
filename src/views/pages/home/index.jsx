@@ -2,7 +2,8 @@ import { Typography, Stack } from "@mui/material"
 import React from "react"
 import { makeStyles } from '@mui/styles';
 import TopBanner from "../../../assets/star-wars/header.png"
-import MiddleBanner from "../../../assets/star-wars/kiloren.jpg"
+import Kiloren from "../../../assets/star-wars/kiloren.jpg"
+import Stormtroopers from "../../../assets/star-wars/stormtroopers.jpg"
 import BattleFrontSection from "./sections/BattleFrontSection";
 import HistorySection from "./sections/HistorySection";
 
@@ -43,12 +44,16 @@ const Home  = () => {
 				</section>
 
 				<Stack width="100%">
-					<img src={MiddleBanner} alt="kiloren image" style={{ objectFit: "cover" }} />
+					<img src={Kiloren} alt="kiloren image" />
 				</Stack>
 
 				<section className={classes.sections}>
 					<HistorySection />
 				</section>
+
+				<Stack width="100%">
+					<img src={Stormtroopers} alt="kiloren image" />
+				</Stack>
 
 			</Stack>
 		</Stack>
